@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0px;
 }
 
 .main-container {
@@ -471,15 +472,12 @@ footer a{
     }
 }
 
-/* Small devices (phones, less than 375px) */
+/* Small devices (phones, less than 375 px) */
 @media (max-width: 375px) {
-
-    *{
-        color: red;
-    }
 
     body{
         border: 1px solid red;
+        margin: 0px;
     }
 
     .main-container{
@@ -491,7 +489,6 @@ footer a{
         height: auto;
         display: flex;
         flex-direction: column;
-        border-bottom: 1px solid #F2F2F2;
     }
 
     .logo-navbar{
@@ -519,17 +516,29 @@ footer a{
         padding: 20px;
     }
 
+    .title-header{
+        margin-left: 20px;
+        width: 335px;
+    }
+
     .title-header h3{
         line-height: 25px;
         margin-bottom: 0px;
     }
+
+    .search-bar{
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+
     .search-city{
         width: 230px;
+        height: 49px;
     }
     
     .svg-locate{
-      border: 1px solid red;
       width: 50px;
+      height: 49px;
     }
 
     .svg-search{
@@ -548,24 +557,20 @@ footer a{
     .filtre{
         flex-direction: column;
         align-items: flex-start;
-        border: 1px solid black;
         width: auto;
         flex-wrap: wrap;
+        margin-left: 20px;
     }
 
     .btn-filter{
         margin-right: 10px;
         width: 150px;
-        padd
     }
 
     .btn-filtre{
         flex-direction: column;
         margin-left: 20px;
-    }
-
-    .column-btn-1, .column-btn-2{
-
+        margin: 0px;
     }
 
     .column-btn-2{
@@ -581,24 +586,43 @@ footer a{
         border: 1px solid red;
     }
 
-    .main-card-hebergement{
-        width: 20px;
-        height: 207.25px;
-        }
-        
-        .img-banner-card{
-        width: 20px;
-        height: 124px;
-        }
+    .info-text{
+        margin-left: 20px;
+    }
 
-
-    .populaires-cards .card {
-        width: 20px;
+    .hebergements-and-populaires{
+        flex-direction: column-reverse;
     }
 
     .populaires-cards {
-        font-size: 1px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .populaires .card{
+        width: 303px;
+        margin-top: 15px;
+    }
+
+    .populaires .card h3{
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .populaires .card p{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    
+    .main-card-hebergement{
         width: 20px;
+        height: 207.25px;
+    }
+        
+    .img-banner-card{
+        width: 20px;
+        height: 124px;
     }
 
     .img-banner-card-activites{
