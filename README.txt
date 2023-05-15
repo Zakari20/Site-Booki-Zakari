@@ -1,0 +1,1 @@
+Pour pouvoir afficher correctement le site, ouvrir le dossier depuis un édideur de code.
