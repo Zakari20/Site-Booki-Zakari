@@ -100,8 +100,14 @@ header{
     font-weight: 700;
 }
 
+/* Responsive Barre de recherche */
+fieldset{
+    border: none;
+    padding: 0px;
+}
+
 .search-bar{
-    width: 377px;
+    width: auto;
     height: 49px;
     display: flex;
     margin-top: 40px;
@@ -169,18 +175,17 @@ header{
     padding:4px 19px 4px 19px;
     margin-left: 25px;
     cursor: pointer;
+    font-size: 17px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-filter:hover{
     background-color: #DEEBFF;
-}
-
-.btn-filter a{
-    text-decoration: none;
-    color: black;
-    display: flex;
-    font-size: 17px;
-    font-weight: 700;
+    cursor: pointer;
+    
 }
 
 .filtre svg{
@@ -207,6 +212,7 @@ header{
 }
 
 /****** Hebergements And Populaires ***********/
+
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -219,6 +225,7 @@ header{
 }
 
 /****** Hebergements ***********/
+
 .hebergements {
     width: 65%;
     background-color: #F2F2F2;
@@ -233,7 +240,7 @@ header{
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-height: 207.25px;
+height: auto;
 }
 
 .column-2{
@@ -241,15 +248,7 @@ margin-top: 30px;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-height: 207.25px;
-}
-
-#card-canebiere{
-    display: none;
-}
-
-#card-amina-2{
-    display: none;
+height: auto;
 }
 
 .main-card-hebergement{
@@ -260,11 +259,50 @@ box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 border-radius: 20px;
 }
 
+#hotel-du-port{
+    background: url(/images/hebergements/fred-kleber.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#hotel-chez-amina{
+    background: url(/images/hebergements/febrian-zakaria.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#hotel-les-mouettes{
+    background: url(/images/hebergements/reisetopia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#hotel-de-la-mer{
+    background: url(/images/hebergements/annie-spratt.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#auberge-la-canebiere{
+    background: url(/images/hebergements/marcus-loke.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#auberge-le-panier{
+    background: url(/images/hebergements/nicate-lee.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .img-banner-card{
 box-sizing: border-box;
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
 width: 250px;
 height: 124px;
 border: 5px solid #FFFFFF;
@@ -287,6 +325,7 @@ margin-top: 0px;
 }
 
 /****** Populaires ***********/
+
 .populaires {
     width: 32%;
     background-color: #F2F2F2;
@@ -360,6 +399,34 @@ margin-top: 0px;
     justify-content: space-between;
 }
 
+#img-VieuxPort{
+    background: url(/images/activites/reno-laithienne.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#img-FortdePomegues{
+    background: url(/images/activites/paul-hermann.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#img-ParcnationaldesCalanques{
+    background: url(/images/activites/kilyan-sockalingum.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#img-NotreDamedelaGarde{
+    background: url(/images/activites/florian-wehde.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .card-activites{
     width: 310px;
     height: 439px;
@@ -368,9 +435,6 @@ margin-top: 0px;
 }
 
 .img-banner-card-activites{
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     width: 310px;
     height: 380px;
     border-radius: 20px 20px 0px 0px;
@@ -412,6 +476,8 @@ footer a{
         margin: 0px;
     }
 
+/* Responsive Filtre */
+
     .filtre{
         flex-direction: column;
         align-items: flex-start;
@@ -428,12 +494,22 @@ footer a{
 
     .hebergements-and-populaires {
         flex-direction: column;
+    }
+
+/* Responsive Hebergment */
+
+    .hebergements {
+        width: 100%;
         background-color: #F2F2F2;
         border-radius: 20px;
     }
 
-    .hebergements {
-        width: 100%;
+    .column-1{
+        align-items: center;
+    }
+
+    .column-2{
+        align-items: center;
     }
 
     .main-card-hebergement{
@@ -444,9 +520,13 @@ footer a{
         width: 268px;
     }
 
+/* Responsive Populaires */
+
     .populaires {
         width: 100%;
+        background-color: #F2F2F2;
         margin-top: 50px;
+        border-radius: 20px;
     }
 
     .populaires-cards {
@@ -495,6 +575,8 @@ footer a{
     .main-container{
         padding: 0px;
     }
+
+/* Responsive Header 374px */
 
     header{
         width: 100%;
@@ -652,22 +734,6 @@ footer a{
         margin: 0px;
     }
 
-    #card-canebiere{
-        display: block;
-    }
-
-    #card-canebiere-2{
-        display: none;
-    }
-
-    #card-amina{
-        display: none;
-    }
-
-    #card-amina-2{
-        display: block;
-    }
-
     .main-card-hebergement{
         width: 300px;
         height: 207.25px;
@@ -690,9 +756,7 @@ footer a{
     }
 
     .card-activites-tableau{
-        /* background-color: red; */
         flex-direction: column;
-        margin-left: 20px;
     }
 
     .img-banner-card-activites{
@@ -702,9 +766,10 @@ footer a{
 
     .card-activites{
         width: 315px;
-        height: auto;
+        height: auto;   
         box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
         margin-top: 15px;
+        margin-left: 27px;
     }
 
     .card-activites h3{
@@ -723,3 +788,5 @@ footer a{
     .footer-text{
         padding-bottom: 20px;
     }
+    
+}
