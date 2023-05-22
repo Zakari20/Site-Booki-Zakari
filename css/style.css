@@ -556,6 +556,15 @@ footer a{
     }
 }
 
+/* font size des h3 des cartes */
+@media only screen and (min-width : 1025px) and (max-width: 1188px){
+
+    .main-card-hebergement h3{
+        font-size: 13px;
+    }
+
+}
+
 /* Small devices phones */
 @media only screen and (min-width : 320px) and (max-width: 767px) {
 
